@@ -13,12 +13,12 @@ export const SearchInput = () => {
           <PrimaryButton>Search</PrimaryButton>
         </StyleButtonWrapper>
       </StyleContainer>
-      <StyleContainer>
+      {/* <StyleContainer>
         <Input placeholder="Search me" />
         <StyleButtonWrapper>
           <SecondaryButton>Search</SecondaryButton>
         </StyleButtonWrapper>
-      </StyleContainer>
+      </StyleContainer> */}
     </div>
   );
 };
