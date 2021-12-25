@@ -1,10 +1,12 @@
+import { memo } from "react";
 import styled from "styled-components";
 
 import { PrimaryButton } from "../atoms/button/PrimaryButton";
-import { SecondaryButton } from "../atoms/button/SecondaryButton";
 import { Input } from "../atoms/input/Input";
 
-export const SearchInput = () => {
+export const SearchInput = memo(() => {
+  console.log("searchInput");
+
   return (
     <div>
       <StyleContainer>
@@ -13,15 +15,9 @@ export const SearchInput = () => {
           <PrimaryButton>Search</PrimaryButton>
         </StyleButtonWrapper>
       </StyleContainer>
-      {/* <StyleContainer>
-        <Input placeholder="Search me" />
-        <StyleButtonWrapper>
-          <SecondaryButton>Search</SecondaryButton>
-        </StyleButtonWrapper>
-      </StyleContainer> */}
     </div>
   );
-};
+});
 
 const StyleContainer = styled.div`
   display: flex;
